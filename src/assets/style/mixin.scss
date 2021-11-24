@@ -5,15 +5,8 @@
 }
   
 
-// @mixin center($type: 'both'){
-//    display: flex;
-//    @if $type == 'justify'{
-//      justify-content: center;
-//    } @else if $type == 'align'{
-//      align-items: center;
-//    } @else if $type == 'both'{
-//      align-items: center;
-//      justify-content: center;
-//    }
-  
-//  }
+@mixin around(){
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }

@@ -116,6 +116,7 @@ export default {
             text-decoration:none;
             color: $primary-color;
             text-transform: uppercase;
+            font-weight: bold;
             &.active{
               color: $logo-color;
             }
