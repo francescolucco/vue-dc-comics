@@ -1,33 +1,13 @@
 <template>
   <section class="merchandise">
     <div class="container">
-      <div class="action-shop">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-        <h1>digital comics</h1>
-      </div>
-      <div class="action-shop">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <h1>dc merchandise</h1>
-      </div>
-      <div class="action-shop">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <h1>subscription</h1>
-      </div>
-      <div class="action-shop">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-        <h1>comic shop locator</h1>
-      </div>
-      <div class="action-shop">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
-        <h1>dc power visa</h1>
-      </div>
-      <!-- <div 
+      <div 
         v-for="(item, index) in shops"
         :key="`section-merchandise-${index}`"
         class="action-shop">
-        <img :src="item.url" alt="">
+        <img :src="require(`../assets/img/${item.url}`)" alt="">
         <h1>{{item.text}}</h1>
-      </div> -->
+      </div>
     </div>
   </section>
 </template>
@@ -39,26 +19,25 @@ export default {
      return{
        shops:[
          {
-           url: '../assets/img/buy-comics-digital-comics.png',
+           url: 'buy-comics-digital-comics.png',
            text: 'digital comics',
          },
          {
-           url: '../assets/img/buy-comics-merchandise.png',
+           url: 'buy-comics-merchandise.png',
            text: 'dc merchandise',
          },
          {
-           url: '../assets/img/buy-comics-subscriptions.png',
+           url: 'buy-comics-subscriptions.png',
            text: 'subscription',
          },
          {
-           url: '../assets/img/buy-comics-shop-locator.png',
+           url: 'buy-comics-shop-locator.png',
            text: 'comic shop locator',
          },
          {
-           url: '../assets/img/buy-dc-power-visa.svg',
+           url: 'buy-dc-power-visa.svg',
            text: 'dc power visa',
          },
-
        ]
      }
    }
