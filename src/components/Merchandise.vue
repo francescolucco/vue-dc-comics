@@ -50,7 +50,7 @@ export default {
 @import "../assets/style/mixin.scss";
 
 section.merchandise{
-  height: 180px;
+  height: 150px;
   background-color: $merchandaise-color;
   .container{
     @include around();
@@ -61,7 +61,7 @@ section.merchandise{
       // width: calc(100% / 5 - 30px);
       height: 100%;
       img{
-        height: 25%;
+        height: 35%;
       }
       h1{
         color: white;

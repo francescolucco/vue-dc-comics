@@ -29,7 +29,7 @@ export default {
         {
           title: 'dc comics',
           voices: [
-            'charachters',
+            'Charachters',
             'Comics',
             'Movies',
             'TV',
@@ -84,6 +84,7 @@ export default {
 .footer-top{
   height: 480px;
   background-image: url('../assets/img/footer-bg.jpg');
+  background-size: cover;
   overflow: hidden;
   .container{
     height: 100%;
@@ -109,6 +110,7 @@ export default {
           cursor: pointer;
           &:hover{
             color: white;
+            text-transform: uppercase;
           }
         }
       }

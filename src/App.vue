@@ -16,6 +16,7 @@ import Merchandise from './components/Merchandise.vue'
 import Footertop from './components/Footertop.vue'
 import Footerbottom from './components/Footerbottom.vue'
 
+
 export default {
   name: 'App',
   components: {
