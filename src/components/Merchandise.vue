@@ -52,17 +52,25 @@ export default {
 section.merchandise{
   height: 150px;
   background-color: $merchandaise-color;
+  &:hover{
+    transition: 0.5s;
+    filter: invert(1);
+  }
   .container{
     @include around();
     height: 100%;
   .action-shop{
       @include center();
       cursor: pointer;
-      // width: calc(100% / 5 - 30px);
       height: 100%;
+      &:hover img, &:hover h1{
+          filter: invert(1);
+          transform: scale(1.075);
+          transition: 0.25s;
+        }
       img{
         height: 35%;
-      }
+              }
       h1{
         color: white;
         text-transform: uppercase;

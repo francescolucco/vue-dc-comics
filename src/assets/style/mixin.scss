@@ -15,3 +15,14 @@
    justify-content: space-between;
    align-items: center;
  }
+
+ @mixin column(){
+    display: flex;
+    flex-direction: column;
+ }
+
+ @mixin wrap(){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }

@@ -105,9 +105,12 @@ export default {
           cursor: pointer;
           &:hover{
             border-bottom: 5px solid $logo-color;
+            transition: 0.1s;
           }
           &:hover a{
             color: $logo-color;
+            transition: 0.1s;
+            font-size: bold;
           }
           &.active{
             border-bottom: 5px solid $logo-color;

@@ -12,12 +12,10 @@ export default {
 </script>
 
 <style lang="scss">
-
 .jumbotron{
   background-image: url('../assets/img/jumbotron.jpg');
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position-x: center;
 }
-
 </style>

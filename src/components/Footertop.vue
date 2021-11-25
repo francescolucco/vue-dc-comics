@@ -98,19 +98,19 @@ export default {
         padding-bottom: 40px;
         .title{
           color: white;
-          font-size: 1.1rem;
+          font-size: 1.3rem;
           font-weight: bold;
           text-transform: uppercase;
           margin-bottom: 20px;
         }
         .voice-menu{
           color: lightgrey;
-          font-size: 0.8rem;
+          font-size: 1rem;
           padding-bottom: 10px;
           cursor: pointer;
           &:hover{
             color: white;
-            text-transform: uppercase;
+            font-weight: bold;
           }
         }
       }

@@ -52,6 +52,7 @@ export default {
         height: 35px;
         border: 2px solid $merchandaise-color;
         padding: 12px 15px;
+        transition: 0.4s;
         &:hover{
           border: 2px solid white;
           color: white;
@@ -69,6 +70,10 @@ export default {
         height: 35px;
         font-weight: bold;
         margin-left: 20px;
+        transition: 0.2s;
+        &:hover{
+          filter: invert(1);
+        }
       }
     }
   }
