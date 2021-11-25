@@ -53,7 +53,7 @@ section.merchandise{
   height: 150px;
   background-color: $merchandaise-color;
   &:hover{
-    transition: 0.5s;
+    transition: 0.8s;
     filter: invert(1);
   }
   .container{
