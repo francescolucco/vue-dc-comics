@@ -6,9 +6,10 @@
     <nav class="menu-header">
       <ul>
         <li v-for="(link, index) in links" 
-          :key="`menu-header-${index}`" 
+          :key="`menu-header-${index}`"
+          @click="getActive(index)" 
           :class="{active: link.current}">
-          <a :class="{active: link.current}" :href="link.text">{{link.text}}</a>
+          <a :class="{active: link.current}" href="#">{{link.text}}</a>
         </li>
       </ul>
     </nav>
@@ -24,7 +25,7 @@ export default {
          {
            url: '/characters',
            text: 'characters',
-           current: false
+           current: false,
          },
          {
            url: '/',
@@ -71,9 +72,19 @@ export default {
            text: 'shop',
            current: false
          },
-       ]
+       ],
      }
-   }
+   },
+   methods:{
+    getActive(index){
+
+      this.links.forEach((item)=>{
+        item.current = false;
+      });
+      this.links[index].current = true;
+    },
+
+  }
 }
 </script>
 
